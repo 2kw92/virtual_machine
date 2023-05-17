@@ -11,5 +11,5 @@ $Env:YC_FOLDER_ID=$(yc config get folder-id)
 
 Получить доступ к кластеру:
 ```
-yc managed-kubernetes cluster get-credentials terraform_cluster --external
+yc managed-kubernetes cluster get-credentials terraform-cluster --external --force
 ```
