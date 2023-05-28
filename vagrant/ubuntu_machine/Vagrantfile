@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
       ubuntu.vm.hostname = "ubuntu"
       ubuntu.vm.provision "shell", inline: <<-SHELL
         mkdir -p ~root/.ssh; cp ~vagrant/.ssh/auth* ~root/.ssh;
-        echo pub.key >> /root/.ssh/authorized_keys
+        echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8fNI9IH4hjTnyKqPVUbg44rFrf9UGmFwJaWX+lYQEvGHOObiWtrn5k3/gomiV2LBv7P1bq+aga7k9qHQ+4ueXXnuvCzkFn6kIXYL2bnu5gqasIYv+ugtgRFBAELM+E4YL/TUbWgIWkZ6O5fFmO4yS7aRi1H8a9FpJixzCqVq0DqmGaspemsAxbK9tlktPr7PQToABJEPDcz2mc2D6tw3m1VZ8mMwsjLdOLQYijlf093kK4CSrasNkBC5YZxKsP+g67AGSDwLCkVcYRLi3R4a6FRHef9H9mRxIxO5r+ojMny/ZM0Gk9YmclSrPTLPTaqPCcTYRi92Kt8xUtGvxdFCF 1@konstantin_pk >> /root/.ssh/authorized_keys
       SHELL
     end
   end
