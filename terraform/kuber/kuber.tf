@@ -1,7 +1,7 @@
 locals {
   cloud_id    = "b1gn6k9ttvc232iga77e"
   folder_id   = "b1gm6apq5aonai4olued"
-  k8s_version = "1.23"
+  k8s_version = "1.24"
   sa_name     = "konstantin"
 }
 
@@ -54,7 +54,7 @@ resource "yandex_kubernetes_node_group" "terraform-group" {
   name       = "terraform-group"
   instance_template {
     name       = "terraform-vm-{instance.index}"
-    platform_id = "standard-v1"
+    platform_id = "standard-v2"
     network_interface {
       nat = true
       subnet_ids         = [yandex_vpc_subnet.terraform_cluster_subnetwork.id]
@@ -67,16 +67,16 @@ resource "yandex_kubernetes_node_group" "terraform-group" {
      type = "containerd"
     }
     resources {
-      memory = 4
-      cores  = 2
+      memory = 8
+      cores  = 4
     }
     boot_disk {
-      size = 200
+      size = 30
     }
   }
   scale_policy {
     fixed_scale {
-      size = 2
+      size = 4
     }
   }
 }
