@@ -13,9 +13,9 @@ provider "yandex" {
 
 
 resource "yandex_compute_instance" "vm-1" {
-  count = 4
-  name = "postgresql-patroni${count.index}"
-  hostname= "postgresql-patroni${count.index}"
+  count = 1
+  name = "ansible-${count.index}"
+  hostname= "ansible-${count.index}"
 
   resources {
     cores  = 2
@@ -55,9 +55,5 @@ provisioner "remote-exec" {
     "sudo apt update",
     "sudo apt install -y mc"]
   }
-
-#provisioner "remote-exec" {
-#  script = "postgresql.sh"
-#  }
 
 }
