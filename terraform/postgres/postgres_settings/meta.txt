@@ -6,3 +6,4 @@ users:
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     ssh_authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrFvF3q2HDBV6N0Zc3tICpENtaSKL6EKgpwOZ2fgXDwlcLDvlBtGNDXiUTAkDqMn2qz7y61cF+wQ/qfggEPHXOVz4MxLPLwVTo38pCL9xPffBFBe2chXaRLWoxzxT2tgGEhQLbl5PjR5ocqQvNhAKVrqD3gK4Z/pkVpFRuDur77I4A1r0Ybqayu0sClAFPmVTkpbWcf/imvgNMl64J4Qr7NThKqGlyDoZo8xcsgiHL7jjU/jJ/plyC7WKtpdvC8u8ml8kHWval2U+EoHTFuGKVgzC1lLZTrxM6lCCUFgX0XHlLvdK2WfFerzU4BkdZEpX5en4A9g63kIEIlZrdJt1n 1@konstantin_pk
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII64WnqLwOaFjwMVbfyEIQCppVjhlRRYJzKQ+KEI1Zsr konstantin_kurockin@MacBook-Pro-Konstantin.local
