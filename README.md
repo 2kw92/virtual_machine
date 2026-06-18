@@ -14,3 +14,4 @@ $Env:YC_FOLDER_ID=$(yc config get folder-id)
 yc managed-kubernetes cluster get-credentials terraform-cluster --external --force
 ```
 test change
+test change привет провкрка связи
