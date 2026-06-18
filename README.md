@@ -15,3 +15,4 @@ yc managed-kubernetes cluster get-credentials terraform-cluster --external --for
 ```
 test change
 test change привет провкрка связи
+test change привет провкрка связи ответ моделм
